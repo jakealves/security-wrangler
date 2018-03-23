@@ -3,14 +3,12 @@ catalog:
   name: Snorby
   questions:
    - variable: "DB_USER"
-      label: "DB Username"
-      description: | 
-      The username of the database account used to connect to the Snorby database.
-      default: snorby_user
-      type: string
+     label: "DB Username"
+     description: | The username of the database account used to connect to the Snorby database.
+     default: snorby_user
+     type: string
    - variable: "DB_PASS"
-      label: "DB Password"
-      description: | 
-      The password of the database account used to connect to the Snorby database.
-      required: true
-      type: string
+     label: "DB Password"
+     description: | The password of the database account used to connect to the Snorby database.
+     required: true
+     type: string
