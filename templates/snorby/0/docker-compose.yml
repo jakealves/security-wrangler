@@ -1,0 +1,17 @@
+snorby-app:
+  restart: always
+  environment:
+    DB_USER: ${DB_USER}
+    DB_PASS: ${DB_PASS}
+    DB_ADDRESS: db
+  image: polinux/snorby
+  ports:
+    - 3000:3000/tcp
+  links:
+    - snorby-db:db
+snorby-db:
+  restart: always
+  environment:
+    DB_USER: ${DB_USER}
+    DB_PASS: ${DB_PASS}
+  image: million12/mariadb
